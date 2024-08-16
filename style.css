@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Banner Section */
+#banner {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+  animation: slideDown 1s ease-in-out;
+}
+
+#banner h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+#banner p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Home Section */
+#home {
+  background-color: #f4f4f4;
+  padding: 5rem 2rem;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#home img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+/* About Me Section */
+#about {
+  background-color: #e2e2e2;
+  padding: 2rem;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#about h3 {
+  color: #666;
+}
+
+/* Projects Section */
+#projects {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#projects .project {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 1rem 0;
+  padding: 1rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#projects .project h3 {
+  color: #333;
+}
+
+#projects .project a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #e2e2e2;
+  padding: 2rem;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+#skills ul li {
+  display: inline;
+  margin: 0 0.5rem;
+  background-color: #ddd;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact form input, #contact form textarea {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 80%;
+}
+
+#contact form button {
+  padding: 0.5rem 2rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#contact form button:hover {
+  background-color: #555;
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
